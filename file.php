@@ -1,18 +1,27 @@
 <?php
-    $nome = "jesus";
-    $notas = [6.5, 8, 9];
+$aluno = array("nome" => "Jesus Roberto");
 
-    $media = array_sum($notas) / count($notas);
+$notas = array(
+    "1bim" => 7,
+    "2bim" => 4,
+    "3bim" => 5,
+    "4bim" => 9
+);
 
-    echo "Nome do aluno: $nome <br>";
-    echo "Notas: ". implode(', ', $notas). "<br>";
-    echo "Média: $media <br>";
+$media = array_sum($notas) / count($notas);
 
-    if ($media >= 7) {
-        echo "Aluno aprovado <br>";
-    } elseif ($media >= 5 && $media < 7) {
-        echo "Aluno em recuperação <br>";
-    } else {
-        echo "Aluno reprovado <br>";
-    }
+$aluno["media"] = $media;
+
+if ($media >= 6) {
+    $aluno["situacao"] = "Aprovado";
+} else if ($media >= 4) {
+    $aluno["situacao"] = "Recuperação";
+} else {
+    $aluno["situacao"] = "Reprovado";
+}
+
+echo "Nome: ". $aluno["nome"]. "\n";
+echo "Notas: ". implode(", ", $notas). "\n";
+echo "Média: ". $aluno["media"]. "\n";
+echo "Situação: ". $aluno["situacao"]. "\n";
 ?>
