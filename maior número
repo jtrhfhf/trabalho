@@ -1,0 +1,5 @@
+<?php
+$array = [20, 10, 309];
+$max = max($array);
+echo "The maximum element in the array is: ". $max;
+?>
