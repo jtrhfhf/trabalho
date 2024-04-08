@@ -1,0 +1,68 @@
+<?php
+$englishNumber = rand(1, 20); // Generate a random number between 1 and 20
+
+switch ($englishNumber) {
+    case 1:
+        $Number = "one";
+        break;
+    case 2:
+        $Number = "two";
+        break;
+    case 3:
+        $Number = "three";
+        break;
+    case 4:
+        $Number = "four";
+        break;
+    case 5:
+        $Number = "five";
+        break;
+    case 6:
+        $Number = "six";
+        break;
+    case 7:
+        $Number = "seven";
+        break;
+    case 8:
+        $Number = "eight";
+        break;
+    case 9:
+        $Number = "nine";
+        break;
+    case 10:
+        $Number = "ten";
+        break;
+    case 11:
+        $Number = "eleven";
+        break;
+    case 12:
+        $Number = "twelve";
+        break;
+    case 13:
+        $Number = "thirteen";
+        break;
+    case 14:
+        $Number = "fourteen";
+        break;
+    case 15:
+        $Number = "fiveteen";
+        break;
+    case 16:
+        $Number = "sixteen";
+        break;
+    case 17:
+        $Number = "seventeen";
+        break;
+    case 18:
+        $Number = "eightteen";
+        break;
+    case 19:
+        $Number = "nineteen";
+        break;
+    case 20:
+        $Number = "twenty";
+        break;
+}
+
+echo "o número $englishNumber em ingles é $Number.";
+?>
