@@ -1,0 +1,15 @@
+<?php
+$num1=21;
+$num2=30;
+
+function chekParity($number) {
+  switch (true){
+       case ($number % 2 == 0);
+         return "par";
+       case ($number % 2 != 0);
+         return "ímpar";
+    }
+}
+
+echo chekParity($num1). " e " . chekParity($num2);
+?>
