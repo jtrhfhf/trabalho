@@ -1,0 +1,44 @@
+<?php
+$mês = rand(1, 12);
+
+switch ($mês) {
+    case 1:
+        $mês = "janeiro";
+        break;
+    case 2:
+        $mês = "fevereiro";
+        break;
+    case 3:
+        $mês = " março";
+        break;
+    case 4:
+        $mês = "abril";
+        break;
+    case 5:
+        $mês = "maio";
+        break;
+    case 6:
+        $mês = "junho";
+        break;
+    case 7:
+        $mês = "julho";
+        break;
+    case 8:
+        $mês = "agosto";
+        break;
+    case 9:
+        $mês = "setembro";
+        break;
+    case 10:
+        $mês = "outubro";
+        break;
+    case 11:
+        $mês = "novembro";
+        break;
+    case 12:
+        $mês = "dezembro";
+        break;
+}
+
+echo "esse mês " . $mês;
+?>
