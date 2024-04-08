@@ -1,0 +1,17 @@
+<?php
+$char = chr(rand(97, 122)); 
+switch (strtolower($char)) {
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        $result = "vogal";
+        break;
+    default:
+        $result = "consoante";
+        break;
+}
+
+echo "essa letra $char é um $result.";
+?>
