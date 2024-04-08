@@ -1,0 +1,29 @@
+<?php
+
+function calculatepreço($productType, $quantity) {
+    $preço = 0;
+
+    switch ($productType) {
+        case 'foguete':
+            $preço = $quantity * 1000000; // preço do foguete $1,000,000 
+            break;
+        case 'russia':
+            $preço = $quantity * 50000; // preço da russia $50,000 
+            break;
+        default:
+            $preço = null;
+            break;
+    }
+
+    return $preço;
+}
+
+
+$foguetepreço = calculatepreço('foguete', 1);
+echo "preço de 1 foguete: $" . $foguetepreço . "\n";
+
+
+$russiapreço = calculatepreço('russia', 1);
+echo "preço da 1 russia: $" . $russiapreço;
+
+?>
