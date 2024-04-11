@@ -1,15 +1,14 @@
 <?php
 
-function muliplicarmatriz($A, $B) {
+function multiplicarMatris($A, $B) {
     $resultado = array();
     
     for ($i = 0; $i < count($A); $i++){
         $resultado[$i] = array();
         for ($j = 0; $j < count($B[0]); $j++){
             $resultado[$i][$j] = 0;
-            for ($k = 0; $k < 0 count($B); $k++){
-                $resultado[$i][$i] += $A[$i][$k]*
-                $B[$k][$j];
+            for ($k = 0; $k < count($B); $k++) {
+                $resultado[$i][$j] += $A[$i][$k]* $B[$k][$j];
             }
         }
         
@@ -17,21 +16,21 @@ function muliplicarmatriz($A, $B) {
     return $resultado;
 }
 
-$matriz1 = array(
+$matris1 = array(
     array(1, 2),
     array(3, 4)
 );
 
-$matriz2 = array(
+$matris2 = array(
     array(5, 6),
     array(7, 8)
 );
 
-$produto = muliplicarmatriz($matriz1, $matriz2);
+$produto = multiplicarMatris($matris1, $matris2);
 
 for($i = 0; $i < count($produto); $i++){
-    for($j = 0; $j < count($produto[$i];)$j+){
-        echo $produto[$i][$j]."";
+    for($j = 0; $j < count($produto[$i]); $j++){
+        echo $produto[$i][$j]." ";
     }
     echo "\n";
 }
