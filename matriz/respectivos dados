@@ -1,0 +1,53 @@
+<?php
+
+$alunos=array(
+    array(
+        "nome" => "nicolas",
+        "matricula" => "123456",
+        "cpf" => "12345678901",
+        "mãe" => "maria",
+        "sexo" => "M",
+        "telefone" => "13245543"
+    ),
+    array(
+        "nome" => "lucas",
+        "matricula" => "234567",
+        "cpf" => "22345678901",
+        "mãe" => "ana",
+        "sexo" => "M",
+        "telefone" => "23245543"
+    ),
+    array(
+        "nome" => "feelipe",
+        "matricula" => "283749",
+        "cpf" => "32344256631",
+        "mãe" => "leticia",
+        "sexo" => "M",
+        "telefone" => "13245543"
+    ),
+    array(
+        "nome" => "pedro",
+        "matricula" => "286744",
+        "cpf" => "35377236631",
+        "mãe" => "patricia",
+        "sexo" => "M",
+        "telefone" => "43245543"
+    ),
+    array(
+        "nome" => "wendy",
+        "matricula" => "283749",
+        "cpf" => "32342526631",
+        "mãe" => "julia",
+        "sexo" => "F",
+        "telefone" => "53245543"
+    )
+    );
+  foreach($alunos as $aluno){
+    echo"nome:". $aluno["nome"]."\n";
+    echo"matricula:". $aluno["matricula"]. "\n";
+    echo"cpf:". $aluno["cpf"]. "\n";
+    echo"mãe:". $aluno["mãe"]. "\n";
+    echo"sexo:". $aluno["sexo"]. "\n";
+    echo"tefelone:". $aluno["telefone"]. "\n\n";
+  } 
+?>    
