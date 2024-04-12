@@ -1,0 +1,32 @@
+<?php
+
+$veiculos=[
+    ["reg_number"=> 0, "model"=>"uno", "fabricante"=> "fiat", "cor"=>"prata", "portas"=> 4,"ano"=>2014],
+    ["reg_number"=> 1, "model"=>"fiest", "fabricante"=> "ford", "cor"=>"preto", "portas"=> 2,"ano"=>2015],
+    ["reg_number"=> 2, "model"=>"dublo", "fabricante"=> "fiat", "cor"=>"verde", "portas"=> 4,"ano"=>2013],
+    ["reg_number"=> 3, "model"=>"celta", "fabricante"=> "GM", "cor"=>"preto", "portas"=> 2,"ano"=>2012],
+    ["reg_number"=> 4, "model"=>"march", "fabricante"=> "nissan", "cor"=>"prata", "portas"=> 2,"ano"=>2015],
+    ["reg_number"=> 5, "model"=>"ranger", "fabricante"=> "ford", "cor"=>"prata", "portas"=> 4,"ano"=>2012],
+    ["reg_number"=> 6, "model"=>"corsa", "fabricante"=> "GM", "cor"=>"branco", "portas"=> 2,"ano"=>2010],
+    ["reg_number"=> 7, "model"=>"trail blazer", "fabricante"=> "GM", "cor"=>"branco", "portas"=> 4,"ano"=>2014],
+    ["reg_number"=> 8, "model"=>"ecosport", "fabricante"=> "ford", "cor"=>"preto", "portas"=> 4,"ano"=>2013],
+    ["reg_number"=> 9, "model"=>"tucson", "fabricante"=> "hyundai", "cor"=>"vinho", "portas"=> 4,"ano"=>2012],
+];
+
+function lista_veiculos($veiculos){
+    echo"\nlista de todos os veiculos\n";
+    foreach($veiculos as $index=>$veiculo){
+        echo $index.".". $veiculo['modelo']."". 
+      $veiculo['fabricante']."". $veiculo['cor'].""
+      $veiculo['porta']."porta". $veiculo['ano']. "\n";
+    }
+}
+
+function lista_prata($veiculos){
+    echo "\nlista prata veiculos\n";
+    foreach($veiculos as $veiculo){
+        if ($veiculo["cor"]=="prata"){
+            echo $veiculo['modelo']."".$veiculo['fabricante']."".$veiculo['ano']."\n";
+        }
+    }
+}
