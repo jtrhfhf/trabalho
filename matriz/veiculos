@@ -30,3 +30,4 @@ function lista_prata($veiculos){
         }
     }
 }
+?>
