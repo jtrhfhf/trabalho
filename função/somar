@@ -1,0 +1,15 @@
+<?php
+
+function Somar($A, $B, $calculos){
+    $resultado = 0;
+    switch($calculos){
+        case '+':
+            $resultado = $A + $B;
+            break;
+    }
+    return $resultado;
+}
+    
+echo somar(rand(0x00, 0xff), rand(0x00, 0xff), "+") . "\n";
+
+?>
