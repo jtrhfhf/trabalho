@@ -6,10 +6,22 @@ function Somar($A, $B, $calculos){
         case '+':
             $resultado = $A + $B;
             break;
+        case '-':
+            $resultado = $A - $B;
+            break;
+        case '*':
+            $resultado = $A * $B;
+            break;        
+        case '/':
+            $resultado = $A / $B;
+            break;    
     }
     return $resultado;
 }
     
 echo somar(rand(0x00, 0xff), rand(0x00, 0xff), "+") . "\n";
+echo somar(rand(0x00, 0xff), rand(0x00, 0xff), "-") . "\n";
+echo somar(rand(0x00, 0xff), rand(0x00, 0xff), "*") . "\n";
+echo somar(rand(0x00, 0xff), rand(0x00, 0xff), "/") . "\n";
 
 ?>
