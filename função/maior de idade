@@ -1,0 +1,22 @@
+<?php
+
+function idadeLegal($dataDeNascimento) {
+	$datadeNascimento = DateTime::createFromFormat('d/m/Y', $dataDeNascimento);
+	if (!$datadeNascimento) {
+		return false;
+	}
+
+    $agora = new DateTime();
+    $idade = $agora->diff($datadeNascimento);
+
+    return $idade->y >= 18;
+}
+
+$dataDeNascimento = '03/10/2003';
+if (idadeLegal($dataDeNascimento)) {
+    echo "jonas é maior de idade no Brasil.\n";
+} else {
+    echo "jonas ainda não é maior de idade no Brasil.\n";
+}
+
+?>
