@@ -1,0 +1,27 @@
+<?php
+
+function calculaMediaEstudante($name, $grades) {
+    $estudante = array("nome" => $name);
+    $estudante["notas"] = $grades;
+    $estudante["media"] = array_sum($grades) / count($grades);
+    
+    if ($estudante["media"] >= 6) {
+        $estudante["situacao"] = "Aprovado";
+    } else if ($estudante["media"] >= 4 ) {
+        $estudante["situacao"] = "recuperação";
+    } else {
+        $estudante["situacao"] = "recuperação";
+    }
+
+    return $estudante;
+}
+
+$grades = array("1bim" => 7, "2bim" => 4, "3bim" => 5, "4bim" => 9);
+$estudante = calculaMediaEstudante("Jesus Roberto", $grades);
+
+echo "nome: " . $estudante["nome"] . "\n";
+echo "notas: " . implode(",", $estudante["notas"]) . "\n";
+echo "media: " . $estudante["media"] . "\n";
+echo "situação: " . $estudante["situacao"] . "\n";
+
+?>
