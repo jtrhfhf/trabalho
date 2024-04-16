@@ -1,0 +1,11 @@
+<?php
+    $numbers = array(1, 2, 3843, 4, 21);
+    $sum = 0;
+
+    foreach ($numbers as $number) {
+        $sum += $number;
+    }
+
+    echo "O resultado da soma de todos os número é: " . $sum;
+    
+?>
