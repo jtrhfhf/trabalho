@@ -1,0 +1,11 @@
+<?php
+
+$LadoDaMoeda = rand(0, 1);
+
+if ($LadoDaMoeda == 0){
+    echo "cara";
+} else {
+    echo "coroa";
+}
+
+?>
