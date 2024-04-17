@@ -1,0 +1,7 @@
+<?php
+
+$LadoDoDado = rand(1, 6);
+
+echo "Lado do dado caiu em: " . $LadoDoDado
+
+?>
