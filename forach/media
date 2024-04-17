@@ -1,0 +1,14 @@
+<?php
+
+$bimestres = [9, 8, 10];
+$total = 0;
+
+foreach ($bimestres as $bimestre){
+    $total += $bimestre;
+}
+
+$mediaTotal = $total / count($bimestre);
+
+echo "A media de Thales é: " . $mediaTotal;
+
+?>
