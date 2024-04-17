@@ -1,0 +1,13 @@
+<?php
+
+$array = ["maçã", "banana", "queijo", "laranja", "prato"];
+$conta = 0;
+ 
+foreach ($array as $elementos){
+    $conta++;
+
+}
+
+echo ("O array possui " . $conta. " elemntos");
+
+?>
