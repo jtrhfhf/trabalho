@@ -1,0 +1,13 @@
+<?php
+
+$numeros = [5, 12, 3, 42, 65, 435, 324];
+$maior = 0;
+
+foreach ($numeros as $numero){
+    if ($numero > $maior){
+        $maior = $numero;
+    }
+}
+
+echo "O maior numero é: " . $maior
+?>
