@@ -1,0 +1,9 @@
+<?php
+
+$start = 18;
+$end = 5;
+$duração = ($end + 24 - $start) % 24;
+
+printf ("o jogo durou %d horas\n", $duração);
+
+?>
