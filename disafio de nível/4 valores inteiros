@@ -1,0 +1,15 @@
+<?php
+
+$A = 5;
+$B = 10;
+$C = 60;
+$D = 100;
+
+if (($B > $C ) && ($D > $A) && (($C + $D) > ($A + $B)) && (($C > 0) && ($D > 0)) && ($A % 2 == 0)){
+    echo "valores aceitos\n";
+} else{
+    echo "valores aceitos\n";
+
+}
+
+?>
